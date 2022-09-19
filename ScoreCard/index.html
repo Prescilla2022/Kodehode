@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="http://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("http://fonts.cdnfonts.com/css/cursed-timer-ulil");
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <p id="timer-min">0</p>
+      <p>:</p>
+      <p id="timer-sec">0</p>
+    </div>
+    <div class="container">
+      <div class="box">
+        <h3>HOME</h3>
+        <p class="score" id="home-Score">0</p>
+        <button onclick="addHomeScoreByOne()">+1</button>
+        <button onclick="addHomeScoreByTwo()">+2</button>
+        <button onclick="addHomeScoreByThree()">+3</button>
+      </div>
+      <div class="box">
+        <h3>GUEST</h3>
+        <p class="score" id="guest-Score">0</p>
+        <button onclick="addGuestScoreByOne()">+1</button>
+        <button onclick="addGuestScoreByTwo()">+2</button>
+        <button onclick="addGuestScoreByThree()">+3</button>
+      </div>
+    </div>
+    <div class="box">
+      <button onclick="newGame()" class="reset">New Game</button>
+      <button onclick="startGame()" class="reset">Start Game</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
